@@ -63,7 +63,7 @@ nav {
     font-size: 1.6rem;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     color: var(--main-white);
     display: inline-block;
@@ -112,21 +112,56 @@ header {
     margin-bottom: 9.5rem;
 }
 
-.heading-btn-wrapper{
+.heading-btn-wrapper {
     margin-bottom: 3.5rem;
 }
 
-.blue-button{
+.blue-button {
     background-color: var(--main-blue);
 }
 
-.blue-button{
+.blue-button {
     font-size: 1.7rem;
     padding: 2rem 4rem;
     margin-right: 3.5rem;
 }
 
-.heading-btn{
+.heading-btn {
     font-size: 1.7rem;
     padding: 2rem 4rem;
 }
+
+.header-screen {
+    height: 85rem;
+    position: relative;
+}
+
+.screen-img-1 {
+    width: 50rem;
+    height: 50rem;
+    transform: rotateX(45deg) rotateZ(-45deg);
+    position: absolute;
+    top: calc(50% - 50rem / 2 - 15rem);
+    left: calc(50% - 50rem / 2 - 1rem);
+}
+
+.screen-img-2 {
+    width: 50rem;
+    height: 50rem;
+    transform: rotateX(45deg) rotateZ(45deg);
+    position: absolute;
+    top: calc(50% - 50rem / 2 + 11rem);
+    left: calc(50% - 50rem / 2 - 38rem);
+
+}
+.screen-img-3 {
+    width: 55rem;
+    height: 50rem;
+    transform: rotateX(45deg) rotateZ(45deg);
+    position: absolute;
+    top: calc(50% - 50rem / 2 + 12.4rem);
+    left: calc(50% - 50rem / 2 + 34.8rem);
+
+}
+
+
