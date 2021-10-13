@@ -154,6 +154,7 @@ header {
     left: calc(50% - 50rem / 2 - 38rem);
 
 }
+
 .screen-img-3 {
     width: 55rem;
     height: 50rem;
@@ -165,3 +166,99 @@ header {
 }
 
 
+.features {
+    background-color: var(--background-color-dark);
+}
+
+.f-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16rem;
+    color: var(--main-white);
+    padding-bottom: 16rem;
+}
+
+.f-heading {
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.f-subheading {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: .5px;
+    text-align: center;
+    font-weight: 400;
+    width: 58rem;
+    margin-bottom: 8rem;
+}
+
+.f-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-images {
+    position: relative;
+}
+
+.f-main-img {
+    width: 70rem;
+    image-rendering: crisp-edges;
+}
+
+.f-secondary-img {
+    width: 40rem;
+    position: absolute;
+    left: 32rem;
+    top: 49.5rem;
+    image-rendering: crisp-edges;
+}
+
+.f-description {
+    margin-left: 8rem;
+}
+
+.f-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.f-description-heading {
+    display: flex;
+    margin: 2rem 0;
+
+}
+
+.f-description-img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    margin-top: .9rem;
+}
+
+#infinity{
+    width: 4rem;
+    height: 2rem;
+}
+
+.f-description-title {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: .5px;
+    width: 15rem;
+}
+
+.f-container-subheading{
+    width: 27rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: .5px;
+    margin-bottom: 7rem;
+
+}
