@@ -167,11 +167,11 @@ header {
 
 }
 
-.features, .contents, .gallery {
+.features, .contents, .gallery, .partners {
     background-color: var(--background-color-dark);
 }
 
-.f-wrapper, .c-wrapper, .g-wrapper {
+.f-wrapper, .c-wrapper, .g-wrapper, .p-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -322,7 +322,16 @@ header {
 }
 
 .g-photo{
-    width: 30%;
+    width: 34rem;
     margin: 2rem;
 }
+.partners-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
 
+.p-photo{
+    height: 5rem;
+    margin: 2rem 4rem;
+}
