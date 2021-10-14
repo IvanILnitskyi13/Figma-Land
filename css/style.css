@@ -177,7 +177,7 @@ header {
     align-items: center;
     padding-top: 16rem;
     color: var(--main-white);
-    margin-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .w-heading {
