@@ -167,11 +167,11 @@ header {
 
 }
 
-.features, .contents, .gallery, .partners {
+.features, .contents, .gallery, .partners, .testimonials {
     background-color: var(--background-color-dark);
 }
 
-.f-wrapper, .c-wrapper, .g-wrapper, .p-wrapper {
+.f-wrapper, .c-wrapper, .g-wrapper, .p-wrapper, .t-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,4 +334,52 @@ header {
 .p-photo{
     height: 5rem;
     margin: 2rem 4rem;
+}
+
+.t-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100rem;
+}
+
+.t-card-container{
+    width: 43rem;
+    margin: 3rem;
+    border: 1px solid var(--main-gray);
+    border-radius: 1rem;
+}
+
+.user-container{
+    display: flex;
+    align-items: center;
+    margin: 4rem 2rem 3rem 4rem;
+
+}
+
+.user-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.user-name{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.user-profession{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.user-opinion{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .5px;
+    width: 32rem;
+    margin: 0 0 4rem 4rem;
 }
