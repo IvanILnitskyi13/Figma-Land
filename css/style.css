@@ -167,16 +167,17 @@ header {
 
 }
 
-.features, .contents {
+.features, .contents, .gallery {
     background-color: var(--background-color-dark);
 }
 
-.f-wrapper, .c-wrapper {
+.f-wrapper, .c-wrapper, .g-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 16rem;
     color: var(--main-white);
+    margin-bottom: 10rem;
 }
 
 .w-heading {
@@ -240,7 +241,7 @@ header {
     margin-top: .9rem;
 }
 
-#infinity{
+#infinity {
     width: 4rem;
     height: 2rem;
 }
@@ -252,7 +253,7 @@ header {
     width: 15rem;
 }
 
-.f-container-subheading{
+.f-container-subheading {
     width: 27rem;
     font-size: 1.6rem;
     line-height: 3rem;
@@ -260,7 +261,7 @@ header {
     margin-bottom: 7rem;
 }
 
-.c-cards{
+.c-cards {
     display: flex
 }
 
@@ -273,19 +274,22 @@ header {
     background-color: var(--main-white);
     color: var(--main-black);
 }
-.border-radius-1{
+
+.border-radius-1 {
     border-radius: 1rem;
 }
-.card-wrapper:not(:last-child){
+
+.card-wrapper:not(:last-child) {
     margin-right: 3.5rem;
 }
-.card-title{
+
+.card-title {
     font-size: 2rem;
     margin-top: 5rem;
     margin-bottom: 4rem;
 }
 
-.card-description{
+.card-description {
     width: 27rem;
     color: var(--main-gray);
     text-align: center;
@@ -294,7 +298,7 @@ header {
     margin-bottom: 4rem;
 }
 
-.card-btn{
+.card-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,7 +308,21 @@ header {
     margin-bottom: 3rem;
 }
 
-.card-img{
+.card-img {
     width: 38rem;
     margin-bottom: 4rem;
 }
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+    margin-bottom: 4rem;
+}
+
+.g-photo{
+    width: 30%;
+    margin: 2rem;
+}
+
