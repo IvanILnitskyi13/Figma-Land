@@ -2,6 +2,8 @@
     --background-color-dark: #181818;
     --main-white: #fff;
     --main-blue: #4452FE;
+    --main-black: #000000;
+    --main-gray: #5C5C5C;
 }
 
 *,
@@ -120,9 +122,9 @@ header {
     background-color: var(--main-blue);
 }
 
-.blue-button {
+.heading-blue-btn {
     font-size: 1.7rem;
-    padding: 2rem 4rem;
+    padding: 2.1rem 4rem;
     margin-right: 3.5rem;
 }
 
@@ -165,21 +167,19 @@ header {
 
 }
 
-
-.features {
+.features, .contents {
     background-color: var(--background-color-dark);
 }
 
-.f-wrapper {
+.f-wrapper, .c-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 16rem;
     color: var(--main-white);
-    padding-bottom: 16rem;
 }
 
-.f-heading {
+.w-heading {
     font-size: 5rem;
     line-height: 6rem;
     letter-spacing: 1px;
@@ -187,7 +187,7 @@ header {
     font-weight: 400;
 }
 
-.f-subheading {
+.w-subheading {
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: .5px;
@@ -208,7 +208,6 @@ header {
 
 .f-main-img {
     width: 70rem;
-    image-rendering: crisp-edges;
 }
 
 .f-secondary-img {
@@ -216,7 +215,6 @@ header {
     position: absolute;
     left: 32rem;
     top: 49.5rem;
-    image-rendering: crisp-edges;
 }
 
 .f-description {
@@ -260,5 +258,53 @@ header {
     line-height: 3rem;
     letter-spacing: .5px;
     margin-bottom: 7rem;
+}
 
+.c-cards{
+    display: flex
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 47.5rem;
+    background-color: var(--main-white);
+    color: var(--main-black);
+}
+.border-radius-1{
+    border-radius: 1rem;
+}
+.card-wrapper:not(:last-child){
+    margin-right: 3.5rem;
+}
+.card-title{
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.card-description{
+    width: 27rem;
+    color: var(--main-gray);
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.card-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 16rem;
+    height: 5rem;
+    margin-bottom: 3rem;
+}
+
+.card-img{
+    width: 38rem;
+    margin-bottom: 4rem;
 }
