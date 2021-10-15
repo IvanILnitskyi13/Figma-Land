@@ -4,6 +4,7 @@
     --main-blue: #4452FE;
     --main-black: #000000;
     --main-gray: #5C5C5C;
+    --dark-gray: #343434;
 }
 
 *,
@@ -167,11 +168,21 @@ header {
 
 }
 
-.features, .contents, .gallery, .partners, .testimonials {
+.features,
+.contents,
+.gallery,
+.partners,
+.testimonials,
+.open-type {
     background-color: var(--background-color-dark);
 }
 
-.f-wrapper, .c-wrapper, .g-wrapper, .p-wrapper, .t-wrapper {
+.f-wrapper,
+.c-wrapper,
+.g-wrapper,
+.p-wrapper,
+.t-wrapper,
+.o-t-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,69 +328,101 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 65%;
+    max-width: 80rem;
     margin-bottom: 4rem;
 }
 
-.g-photo{
+.g-photo {
     width: 34rem;
     margin: 2rem;
 }
-.partners-logo{
+
+.partners-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.p-photo{
+.p-photo {
     height: 5rem;
     margin: 2rem 4rem;
 }
 
-.t-cards{
+.t-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100rem;
 }
 
-.t-card-container{
+.t-card-container {
     width: 43rem;
     margin: 3rem;
     border: 1px solid var(--main-gray);
     border-radius: 1rem;
 }
 
-.user-container{
+.user-container {
     display: flex;
     align-items: center;
     margin: 4rem 2rem 3rem 4rem;
 
 }
 
-.user-img{
+.user-img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     margin-right: 2rem;
 }
 
-.user-name{
+.user-name {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.5rem;
 }
-.user-profession{
+
+.user-profession {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.5rem;
 }
 
-.user-opinion{
+.user-opinion {
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: .5px;
     width: 32rem;
     margin: 0 0 4rem 4rem;
+}
+
+.o-t-container {
+    display: flex;
+    justify-content: space-between;
+    height: 37rem;
+    width: 122rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: var(--dark-gray);
+
+
+}
+
+.verbal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 9rem;
+}
+
+.o-t-heading {
+    width: 48rem;
+    padding-top: 4rem;
+}
+
+.media-content {
+    display: block;
+    margin-top: 4rem;
+    height: 60rem;
 }
