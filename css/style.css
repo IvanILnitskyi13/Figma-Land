@@ -173,7 +173,8 @@ header {
 .gallery,
 .partners,
 .testimonials,
-.open-type {
+.open-type,
+.footer {
     background-color: var(--background-color-dark);
 }
 
@@ -328,7 +329,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 80rem;
+    max-width: 120rem;
     margin-bottom: 4rem;
 }
 
@@ -426,3 +427,66 @@ header {
     margin-top: 4rem;
     height: 60rem;
 }
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    color: var(--main-white);
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+
+}
+
+.footer-links-container {
+    display: flex;
+    width: 12rem;
+}
+
+.footer-link-heading {
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.footer-link-subheading {
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links-box:not(:last-child) {
+    margin-right: 7.5rem;
+}
+
+.footer-links-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 1.6rem;
+}
+
+.footer-img:not(:last-child),
+.social-media-link:not(:last-child){
+    margin-right: 2rem;
+}
+
+.footer-img {
+    height: 3.5rem;
+}
+
