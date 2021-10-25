@@ -1,5 +1,5 @@
 :root {
-    --background-color-dark: #181818;
+    --background-color-dark: rgb(24, 24, 24);
     --main-white: #fff;
     --main-blue: #4452FE;
     --main-black: #000000;
@@ -64,12 +64,40 @@ nav {
     text-decoration: none;
     color: var(--main-white);
     font-size: 1.6rem;
+    transition: all .5s;
 }
 
+.nav-link:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--main-blue);
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav-link:hover:after{
+    transform: scale(1);
+}
+
+.nav-link:active {
+    transform: scale(.9);
+}
 .btn {
     text-decoration: none;
     color: var(--main-white);
     display: inline-block;
+    transition: all .5s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    backface-visibility: hidden;
+    filter: blur(0);
+}
+
+.btn:active {
+    transform: translateY(5px) scale(1);
+
 }
 
 .white-border-btn {
@@ -126,8 +154,10 @@ header {
 
 .heading-blue-btn {
     font-size: 1.7rem;
-    padding: 2.1rem 4rem;
+    padding: 2rem 4rem;
     margin-right: 3.5rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .heading-btn {
@@ -201,6 +231,12 @@ header {
     letter-spacing: 1px;
     margin-bottom: 3rem;
     font-weight: 400;
+    transition: all .4s;
+    backface-visibility: hidden;
+}
+
+.w-heading:hover{
+    transform: rotate(-2deg) scale(1.1);
 }
 
 .w-subheading {
@@ -337,6 +373,11 @@ header {
 .g-photo {
     width: 34rem;
     margin: 2rem;
+    transition: all .5s
+}
+
+.g-photo:hover {
+transform: scale(1.1);
 }
 
 .partners-logo {
@@ -503,7 +544,7 @@ header {
         align-items: center;
     }
 
-    .o-t-heading{
+    .o-t-heading {
         text-align: center;
     }
 
@@ -519,37 +560,38 @@ header {
         margin-bottom: 3rem;
     }
 
-    .f-content{
+    .f-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .f-images{
+    .f-images {
         margin-bottom: 15rem;
     }
 
-    .f-secondary-img{
+    .f-secondary-img {
         left: 15rem;
     }
 
-    .f-description{
+    .f-description {
         margin-left: 0;
     }
 
-    .f-container{
+    .f-container {
         align-items: center;
     }
 
-    .f-container-subheading{
+    .f-container-subheading {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .partners-logo{
+    .partners-logo {
         flex-direction: column;
         align-items: center;
     }
+
     .c-cards {
         flex-direction: column;
     }
